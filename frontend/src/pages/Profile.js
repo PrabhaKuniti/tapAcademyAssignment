@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { toast } from 'react-toastify';
-import apiClient from '../../config/api';
+import apiClient from '../config/api';
 import './Profile.css';
 
 const Profile = () => {
