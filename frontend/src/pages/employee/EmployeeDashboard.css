@@ -1,0 +1,105 @@
+.today-status-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.today-status-card h2 {
+  color: white;
+}
+
+.today-status-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.status-info {
+  flex: 1;
+  min-width: 200px;
+}
+
+.status-info p {
+  margin: 8px 0;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.quick-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-large {
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.stat-card {
+  text-align: center;
+}
+
+.stat-card h3 {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.stat-value {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.stat-value-large {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.attendance-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.attendance-table th,
+.attendance-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.attendance-table th {
+  background-color: #f9fafb;
+  font-weight: 600;
+  color: #374151;
+}
+
+.attendance-table tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+@media (max-width: 768px) {
+  .today-status-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .quick-actions {
+    width: 100%;
+  }
+
+  .btn-large {
+    width: 100%;
+  }
+}
+
+

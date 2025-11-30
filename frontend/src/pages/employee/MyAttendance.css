@@ -1,0 +1,88 @@
+.filter-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  align-items: end;
+}
+
+.view-toggle {
+  display: flex;
+  gap: 10px;
+}
+
+.view-toggle .btn {
+  flex: 1;
+}
+
+.calendar-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.react-calendar {
+  width: 100%;
+  max-width: 600px;
+  border: none;
+  border-radius: 8px;
+  font-family: inherit;
+}
+
+.react-calendar__tile {
+  height: 60px;
+  position: relative;
+}
+
+.calendar-day.calendar-present {
+  background-color: #d1fae5;
+}
+
+.calendar-day.calendar-absent {
+  background-color: #fee2e2;
+}
+
+.calendar-day.calendar-late {
+  background-color: #fef3c7;
+}
+
+.calendar-day.calendar-half-day {
+  background-color: #fed7aa;
+}
+
+.calendar-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.calendar-legend {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.legend-color {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .filter-controls {
+    grid-template-columns: 1fr;
+  }
+}
+
+
